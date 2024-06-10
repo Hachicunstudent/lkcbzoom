@@ -13,7 +13,7 @@ import {
   HStack,
   Heading,
 } from '@chakra-ui/react';
-import {  FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle } from 'react-icons/fa';
 
 function PriceWrapper({ children }) {
   return (
@@ -29,7 +29,7 @@ function PriceWrapper({ children }) {
   );
 }
 
-export default function PricingAndSupportSection() {
+export default function PricingAndSupportSection({ onRegisterClick }) {
   return (
     <Box py={12}>
       <VStack spacing={2} textAlign="center">
@@ -101,21 +101,22 @@ export default function PricingAndSupportSection() {
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   Và còn nhiều hơn nữa trong tương lai
                 </ListItem>
-
               </List>
               <Button
                 mt={10}
                 w={'full'}
-                bg={'green.400'}
+                bg={'red.400'}
                 color={'white'}
                 rounded={'xl'}
                 boxShadow={'0 5px 20px 0px rgb(72 187 120 / 43%)'}
                 _hover={{
-                  bg: 'green.500',
+                  bg: 'red.500',
                 }}
                 _focus={{
-                  bg: 'green.500',
-                }}>
+                  bg: 'red.500',
+                }}
+                onClick={onRegisterClick}
+              >
                 Đăng Kí Ngay
               </Button>
             </Box>
@@ -161,7 +162,6 @@ export default function PricingAndSupportSection() {
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   Ưu tiên tham gia các chương trình Lục Khí khác của nhà Lục Khí
                 </ListItem>
-
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   Hỗ trợ học viên trọn đời
@@ -170,16 +170,18 @@ export default function PricingAndSupportSection() {
               <Button
                 mt={10}
                 w={'full'}
-                bg={'green.400'}
+                bg={'red.400'}
                 color={'white'}
                 rounded={'xl'}
                 boxShadow={'0 5px 20px 0px rgb(72 187 120 / 43%)'}
                 _hover={{
-                  bg: 'green.500',
+                  bg: 'red.500',
                 }}
                 _focus={{
-                  bg: 'green.500',
-                }}>
+                  bg: 'red.500',
+                }}
+                onClick={onRegisterClick}
+              >
                 Đăng Kí Ngay
               </Button>
             </Box>

@@ -8,6 +8,7 @@ import {
   StatLabel,
   StatNumber,
   useColorModeValue,
+  Button,
 } from '@chakra-ui/react';
 import { BsPerson } from 'react-icons/bs';
 import { FiBookOpen } from 'react-icons/fi';
@@ -42,7 +43,7 @@ function StatsCard({ title, stat, icon }) {
   );
 }
 
-export default function StatisticsSection() {
+export default function StatisticsSection({ onRegisterClick }) {
   return (
     <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
       <chakra.h1
@@ -69,6 +70,16 @@ export default function StatisticsSection() {
           icon={<AiOutlineFileText size={'3em'} />}
         />
       </SimpleGrid>
+      <Flex justify="center" mt={10}>
+        <Button
+          onClick={onRegisterClick}
+          colorScheme="red"
+          variant="solid"
+          size="lg"
+        >
+          Đăng Kí Ngay
+        </Button>
+      </Flex>
     </Box>
   );
 }

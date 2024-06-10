@@ -1,9 +1,8 @@
-// src/components/TargetAudience.js
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, SimpleGrid, Icon, Text, Stack, Flex, Heading } from '@chakra-ui/react';
+import { Box, SimpleGrid, Icon, Text, Stack, Flex, Heading, Button } from '@chakra-ui/react';
 import { FaFemale, FaUserAlt, FaHeartbeat } from 'react-icons/fa';
-import { FcBusinesswoman, FcNightPortrait,FcReading   } from "react-icons/fc";
+import { FcBusinesswoman, FcNightPortrait, FcReading } from 'react-icons/fc';
 
 const Feature = ({ title, text, icon }) => {
   return (
@@ -31,7 +30,7 @@ Feature.propTypes = {
   icon: PropTypes.element.isRequired,
 };
 
-export default function TargetAudience() {
+export default function TargetAudience({ onRegisterClick }) {
   return (
     <Box p={8}>
       <Stack spacing={4} as={Box} textAlign={'center'}>
@@ -49,11 +48,24 @@ export default function TargetAudience() {
           text={'Tự chữa bệnh'}
         />
         <Feature
-          icon={<Icon as={FcReading } w={10} h={10} />}
+          icon={<Icon as={FcReading} w={10} h={10} />}
           title={'Người đam mê đông y'}
           text={'Tự chữa bệnh'}
         />
       </SimpleGrid>
+      <Stack mt={8} align={'center'}>
+        <Button 
+          colorScheme="red" 
+          variant="solid" 
+          onClick={onRegisterClick}
+        >
+          Đăng Kí Ngay
+        </Button>
+      </Stack>
     </Box>
   );
 }
+
+TargetAudience.propTypes = {
+  onRegisterClick: PropTypes.func.isRequired,
+};
