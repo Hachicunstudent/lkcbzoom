@@ -59,7 +59,7 @@ import {
               <Feature
                 icon={<Icon as={IoCalendar} color={'yellow.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={'Thời gian khai giảng: 09/06/2024'}
+                text={'Thời gian khai giảng: 20/06/2024'}
               />
               <Feature
                 icon={<Icon as={IoTime} color={'green.500'} w={5} h={5} />}
