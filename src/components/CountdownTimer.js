@@ -47,7 +47,7 @@ const CountdownTimer = ({ onClose }) => {
   };
 
   const startCountDown = useCallback(() => {
-    const countDownDate = new Date('2024-06-20T00:00:00').getTime();
+    const countDownDate = new Date('2024-06-21T00:00:00').getTime();
 
     setInterval(() => {
       getTimeDifference(countDownDate);

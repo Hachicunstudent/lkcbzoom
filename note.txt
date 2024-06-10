@@ -1,0 +1,5 @@
+Trước khi làm thì nên viết countdowntime Trước
+Sau đó làm form để trỏ về
+Formt thì dùng formsubmit để đơn giản 
+Sau đó dùng make làm webhook để trỏ về 
+Chỉnh sửa ngày khai giảng
