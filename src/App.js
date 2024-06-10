@@ -52,6 +52,8 @@ function App() {
             <Hero onRegisterClick={handleRegisterClick} />
             <Divider my={8} borderColor="teal.500" />
             <TargetAudience onRegisterClick={handleRegisterClick} />
+            <CountdownTimer onClose={() => console.log('Closed')} />
+
             <Divider my={8} borderColor="teal.500" />
             <BenefitsSection 
               onRegisterClick={handleRegisterClick}
@@ -61,6 +63,8 @@ function App() {
             <TimelineSection onRegisterClick={handleRegisterClick} />
             <Divider my={8} borderColor="teal.500" />
             <CoursesDetail />
+            <CountdownTimer onClose={() => console.log('Closed')} />
+
             <Divider my={8} borderColor="teal.500" />
             <div ref={formRef}>
               <Form />
@@ -73,6 +77,8 @@ function App() {
             <PricingSection onRegisterClick={handleRegisterClick} />
             <Divider my={8} borderColor="teal.500" />
             <FAQSection onRegisterClick={handleRegisterClick} />
+            <CountdownTimer onClose={() => console.log('Closed')} />
+
             <Divider my={8} borderColor="teal.500" />
             <StatisticsSection onRegisterClick={handleRegisterClick} />
             <Divider my={8} borderColor="teal.500" />
